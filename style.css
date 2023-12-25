@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Consolas', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, hsl(12, 100%, 69%), #4a2a11);
+    color: rgb(176, 119, 119);
+    text-align: center;
+    animation: gradientAnimation 10s infinite alternate;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.5em;
+  }
+  
+  /* Style for the boxes */
+  .message-box {
+    display: none;
+    background-color: #333; /* Dark background color */
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dark box shadow */
+    animation: colorChangeAnimation 5s infinite alternate;
+  }
+
+  /* Style for the container holding buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Align items horizontally in the center */
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: hsl(12, 67%, 68%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  
+  @keyframes colorChangeAnimation {
+    0% {
+      background-color: #ff7e5f;
+    }
+    50% {
+      background-color: #ffadc2;
+    }
+    100% {
+      background-color: hsl(12, 100%, 69%);
+    }
+  }
+  

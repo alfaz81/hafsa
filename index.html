@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Here Buttons</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Message at the top -->
+  <h2>WELCOME MOTUUUU!</h2>
+  <!-- Message at the top -->
+  <h1>Alfaz loves you jannu!</h1>
+  <br>
+
+  <!-- Message Boxes -->
+  <div id="loveBox" class="message-box">
+    <p>I love you!</p>
+  </div>
+
+  <div id="missBox" class="message-box">
+    <p>I miss you!</p>
+  </div>
+
+  <div id="sorryBox" class="message-box">
+    <!-- Apology content will be inserted dynamically here -->
+  </div>
+
+  <!-- Buttons at the bottom -->
+  <div class="button-container">
+    <!-- Button 1 -->
+    <button onclick="openMessageBoxInNewTab('loveBox')">Click Here ji</button>
+    <br>
+
+    <!-- Button 2 -->
+    <button onclick="openMessageBoxInNewTab('missBox')">Click Here (Iddar bhi)</button>
+    <br>
+
+    <!-- Button 3 -->
+    <button onclick="openMessageBoxInNewTab('sorryBox')">Click Here (iddar bhi kar lo)</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
